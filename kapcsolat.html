@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>[Neved] – Kapcsolat</title>
+  <meta name="description" content="Lépj kapcsolatba velem: elérhetőségek és kapcsolatfelvételi űrlap.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Főmenü">
+    <div class="container nav__inner">
+      <a href="index.html">Bemutatkozás</a>
+      <a href="kapcsolat.html" aria-current="page">Kapcsolat</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <p class="hero__hello">Beszélgessünk</p>
+      <h1>Kapcsolat</h1>
+      <p class="hero__role">[Rövid mondat arról, miben számíthatnak rád]</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="elerhetosegek" aria-labelledby="elerhetosegek-cim">
+      <h2 id="elerhetosegek-cim">Elérhetőségek</h2>
+      <ul class="contact">
+        <li><span>E-mail:</span> [email@pelda.hu]</li>
+        <li><span>Telefon:</span> [+36 00 000 0000]</li>
+        <li><span>GitHub:</span> [github.com/felhasznalonev]</li>
+        <li><span>LinkedIn:</span> [linkedin.com/in/felhasznalonev]</li>
+      </ul>
+    </section>
+
+    <section id="uzenet" aria-labelledby="uzenet-cim">
+      <h2 id="uzenet-cim">Írj nekem</h2>
+      <!-- Megjegyzés: statikus oldal, nincs backend. Az űrlap a mailto: címre
+           nyitja meg az olvasó levelezőprogramját. Cseréld le a helykitöltő címet! -->
+      <form class="form" action="mailto:email@pelda.hu" method="post" enctype="text/plain">
+        <label for="nev">Név</label>
+        <input type="text" id="nev" name="nev" autocomplete="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="uzenet-szoveg">Üzenet</label>
+        <textarea id="uzenet-szoveg" name="uzenet" rows="6" required></textarea>
+
+        <button class="btn" type="submit">Küldés</button>
+        <p class="form__note">A küldés gombra kattintva megnyílik az e-mail programod a kész üzenettel.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 [Neved]</p>
+  </footer>
+</body>
+</html>

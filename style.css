@@ -81,6 +81,46 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .contact span { color: var(--muted); margin-right: 0.4rem; }
 
+.nav { border-bottom: 1px solid var(--border); background: var(--bg); }
+
+.nav__inner { display: flex; gap: 1.5rem; padding: 0.9rem 0; }
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 0.15rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover, .nav a:focus-visible { color: var(--text); }
+
+.nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+
+.form { display: grid; gap: 0.5rem; }
+
+.form label { color: var(--muted); margin-top: 0.5rem; }
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.form textarea { resize: vertical; }
+
+.form input:focus-visible, .form textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.form .btn { justify-self: start; margin-top: 1rem; border: 0; font: inherit; font-weight: 600; cursor: pointer; }
+
+.form__note { margin: 0; color: var(--muted); font-size: 0.9rem; }
+
 footer {
   margin-top: 3rem;
   padding: 1.5rem 1rem;
